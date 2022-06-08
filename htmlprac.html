@@ -8,15 +8,46 @@
     <style>
         form {
             margin: 0 auto;
-            wwidth: 400px;
+            width: 400px;
             padding: 1em;
             border: 1px solid #CCC;
             border-radius: 1em;
         }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+
+        input:focus,
+        textarea:focus { 
+            border-color: 1px solid #999;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 5em;
+        }
+
+        .button {
+            padding-left: 90px;
+        }
+
+        button {
+            margin-left: .5em;
+        }
+
     </style>
 </head>
 <body>
-<form action="?my-handling-form-page" method="post">
+<form action="/my-handling-form-page" method="post">
     <ul>
         <li>
             <label for="name">Name:</label>
