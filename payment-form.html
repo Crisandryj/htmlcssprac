@@ -17,19 +17,56 @@
           <legend>Title</legend>
           <ul>
             <li>
-              <input type="radio" id="king" name="card">
+              <input type="radio" id="king" name="card" value="k">
               <label for="king">King</label>
             </li>
             <li>
-              <input type="radio" id="queen" name="card">
+              <input type="radio" id="queen" name="card" value="q">
               <label for="queen">Queen</label>
             </li>
             <li>
-              <input type="radio" id="joker" name="card">
+              <input type="radio" id="joker" name="card" value="j">
               <label for="joker">Joker</label>
             </li>
           </ul>
         </fieldset>
+        <p>
+          <label for="name">
+            <span>Name</span> <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" name="name" id="name">
+        </p>
+        <p>
+          <label for="email">
+            <span>Email</span> <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" name="email" id="email">
+        </p>
+        <p>
+          <label for="password">
+            <span>Password</span> <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="password" name="password" id="password">
+        </p>
+      </section>
+      <section>
+        <h2>Payment Information</h2>
+          <p>
+            <label for="card">Creditcard:</label>
+            <select name="creditcard" id="card">
+              <option value="visa" id="card">Visa</option>
+              <option value="capitalone" id="card">Capital One</option>
+              <option value="mastercard" id="card">Mastercard</option>
+            </select>
+          </p>
+          <p>
+            <p>
+              <label for="number">
+                <span>Card number:</span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="tel" id="number" name="cardnumber">
+            </p>
       </section>
 
       </form>  
