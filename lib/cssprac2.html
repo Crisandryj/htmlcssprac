@@ -17,6 +17,25 @@
         width: 500px;
       }
 
+      form {
+        position : relative;
+        width  : 740px;
+        height : 498px;
+        margin : 0 auto;
+        padding: 1em;
+        box-sizing: border-box;
+        background : #FFF url(background.jpg);
+
+        /* we create our grid */
+        display  : grid;
+        grid-gap : 20px;
+        grid-template-columns : repeat(2, 1fr);
+        grid-template-rows    : 10em 1em 1em 1em;
+      }
+      h2 {
+          font : 1em "typewriter", monospace;
+          align-self : middle;
+        }
     </style>
   </head>
 
